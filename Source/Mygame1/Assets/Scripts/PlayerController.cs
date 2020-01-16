@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 	private Vector2 jumpVelocity;
 	private bool isJump;
 	private BoxCollider2D boxCollider;
-	[SerializeField] private LayerMask layerMask;
+	public LayerMask layerMask;
 	private SpriteRenderer spriteRender;
 	
     // Start is called before the first frame update
@@ -38,13 +38,14 @@ public class PlayerController : MonoBehaviour
 				// animation
 			
 		if(Input.GetAxisRaw("Horizontal") < 0){
-			spriteRender.flipX = true;
+			transform.localScale = new Vector3(-1f,1f,1f);
 		}
 		else if (Input.GetAxisRaw("Horizontal") > 0){ 
-		spriteRender.flipX = false; }
+		transform.localScale = new Vector3(1f,1f,1f);
+		}
+		
 	   animator.SetFloat("Speed", Mathf.Abs(moveVelocity) );
-	
-	
+		
 		//jumping
 		isJump = Input.GetKeyDown("space");
 			 if (IsGrounded() && isJump) {
@@ -56,8 +57,9 @@ public class PlayerController : MonoBehaviour
 	  //jumping and falling animation
 	  if(IsGrounded()== false && rb.velocity.y > 0 ){
 		  animator.SetBool("IsJumping",true); 
+		  animator.SetBool("IsFalling",false);
 	  }
-	  else if(IsGrounded() == false && rb.velocity.y < 0) {
+	  else if(IsGrounded() == false && rb.velocity.y <= 0) {
 		  animator.SetBool("IsFalling",true);
 		  animator.SetBool("IsJumping",false);
 	  }
@@ -65,6 +67,9 @@ public class PlayerController : MonoBehaviour
 		  animator.SetBool("IsJumping",false);
 		  animator.SetBool("IsFalling",false);
 	  }
+	  
+	  
+	  
 	  
 	  
 	  
