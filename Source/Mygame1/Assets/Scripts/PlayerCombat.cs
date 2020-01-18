@@ -11,14 +11,19 @@ public class PlayerCombat : MonoBehaviour
 	public float attackRange = 0.5f;
 	public LayerMask enemyLayers;
 	public int attackDamage = 2;
-	public int knockback = 1;
 	public float attackRate = 2f;
+	public int playerHealth = 10;
+	public float knockbackForce;
+	private Rigidbody2D rb;
+	public int currentHealth;
+	
 	float nextAttackTime = 0f;
 	
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentHealth = playerHealth;
+		rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -61,6 +66,58 @@ public class PlayerCombat : MonoBehaviour
 			Gizmos.DrawWireSphere(attackPoint.position,attackRange);
 			
 		}
+		
+		
+		
+		public  void TakeDamage(int damage, Vector3 attackPos)
+{
+	currentHealth -= damage;
+	
+	//damage animation
+	animator.SetTrigger("Hurt");
+	
+	//knockback
+	
+	Vector3 knockbackDir =  transform.position - attackPos  ;
+	Debug.Log("attackPos" + attackPos);
+    Debug.Log("knockbackDir" + knockbackDir.normalized);
+	
+	//rb.isKinematic = false; 
+	rb.AddForceAtPosition(knockbackDir.normalized * knockbackForce  ,attackPos,ForceMode2D.Impulse);
+	Debug.Log("knockback");
+	StartCoroutine(Wait());
+	
+	
+	
+	
+	if(currentHealth <=0){
+		Die();
+		
+	}
+	
+}
+	
+  IEnumerator Wait(){
+	  yield return new WaitForSecondsRealtime(0.25f);
+	 // rb.isKinematic = true;
+  }
+
+
+
+	void Die(){
+		//death animation
+		animator.SetBool("IsDead",true);
+		Debug.Log("dead");
+		
+		//disable
+		GetComponent<Collider2D>().enabled = false;
+		this.enabled = false;
+		Destroy(gameObject);
+	 
+	
+		
+	}
+		
 		
 		
 		

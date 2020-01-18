@@ -52,8 +52,7 @@ public class PauseMenu : MonoBehaviour
 	
 	public void LoadMenu(){
 		Time.timeScale = 1f;
-		playercontroller.GetComponent<PlayerController>().enabled = true;
-		playercontroller.GetComponent<PlayerCombat>().enabled = true;
+		gameIsPaused = false;
 		SceneManager.LoadScene(0);
 	}
 	

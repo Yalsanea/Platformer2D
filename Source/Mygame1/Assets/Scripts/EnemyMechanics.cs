@@ -14,6 +14,14 @@ public class EnemyMechanics : MonoBehaviour
 	public Animator animator;
     public bool Knockback = false;
 	private Rigidbody2D rb;
+	public float knockbackForce;
+	public Transform attackPoint;
+	public float attackRange = 0.5f;
+	public LayerMask enemyLayers;
+	public int attackDamage = 2;
+	public float attackRate = 1f;
+	private Collider2D[] hitEnemies;
+	float nextAttackTime = 0f;
 	
 	void Start()
     {
@@ -24,6 +32,24 @@ public class EnemyMechanics : MonoBehaviour
 		}
 	
     }
+	
+	
+	void Update(){
+
+	
+		//detect enemies in range of attack
+		Collider2D hitEnemy = Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyLayers);
+		if(hitEnemy != null){
+			 if(Time.time >= nextAttackTime){
+			Attack();
+			nextAttackTime = Time.time +1f/attackRate;
+			 }
+		}
+
+		
+	}
+	
+	
 	
 	
 
@@ -37,14 +63,11 @@ public  void TakeDamage(int damage, Vector3 attackPos)
 	//knockback
 	if (Knockback == true){
 		
-		//GetComponent<AIPath>().enabled = false;
-	Vector3 knockbackDir = transform.position - attackPos;
-	transform.Translate(knockbackDir * 2);
-  
-	//rb.MovePosition(knockbackDir*1000);
-
-	Debug.Log("knockback");
-	//GetComponent<AIPath>().enabled = true;
+    GetComponent<AIPath>().canMove = false;
+	Vector3 knockbackDir =  transform.position - attackPos  ;
+	rb.isKinematic = false; 
+	rb.AddForceAtPosition(knockbackDir.normalized * knockbackForce  ,attackPos,ForceMode2D.Impulse);
+	StartCoroutine(Wait());
 	
 	}
 	
@@ -56,6 +79,14 @@ public  void TakeDamage(int damage, Vector3 attackPos)
 	}
 	
 }
+	
+  IEnumerator Wait(){
+	  yield return new WaitForSecondsRealtime(0.25f);
+	  GetComponent<AIPath>().canMove = true;
+	  rb.isKinematic = true;
+  }
+
+
 
 	void Die(){
 		//death animation
@@ -70,6 +101,33 @@ public  void TakeDamage(int damage, Vector3 attackPos)
 	
 		
 	}
+	
+	
+	void Attack()
+	{
+		// play attack animation
+		//animator.SetTrigger("Attack");
+
+		//damage
+		Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+		foreach(Collider2D enemy in hitEnemies){
+			Debug.Log("hit" + enemy.name);
+			enemy.GetComponent<PlayerCombat>().TakeDamage(attackDamage,attackPoint.position);
+			
+		}
+	}
+		
+		void OnDrawGizmosSelected ()
+		{      //draw wireframe of attack hit circle
+			if(attackPoint == null){
+			return;
+			}
+		
+			Gizmos.color = Color.white;
+			Gizmos.DrawWireSphere(attackPoint.position,attackRange);
+			
+		}
+	
 
     
 }
