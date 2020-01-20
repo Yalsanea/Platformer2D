@@ -22,7 +22,7 @@ public class HUD : MonoBehaviour
 	   if(player !=null){
 	     playerHealth = player.GetComponent<PlayerCombat>().currentHealth;
 	   heartUI.sprite = heartSprites[playerHealth];
-	   Debug.Log(playerHealth);
+	   
 	   } else{
 		   
 		     heartUI.sprite = heartSprites[0];
