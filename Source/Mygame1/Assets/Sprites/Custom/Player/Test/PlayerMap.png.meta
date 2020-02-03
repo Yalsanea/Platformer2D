@@ -7,12 +7,19 @@ TextureImporter:
     21300004: PlayerMap_2
     21300006: PlayerMap_3
     21300008: PlayerMap_4
+    21300010: PlayerMap_5
+    21300012: PlayerMap_6
+    21300014: PlayerMap_7
+    21300016: PlayerMap_8
+    21300018: PlayerMap_9
+    21300020: PlayerMap_10
+    21300022: PlayerMap_11
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -36,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -108,13 +115,13 @@ TextureImporter:
         width: 30
         height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a02698831e23d12409b72474c539df19
+      spriteID: 029977f332b36cf41994f87db7df9658
       vertices: []
       indices: 
       edges: []
@@ -128,13 +135,13 @@ TextureImporter:
         width: 30
         height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d66e151097e884446a00aebc42d32622
+      spriteID: 0c8270169e8092e4cb9869a2b33c3c2b
       vertices: []
       indices: 
       edges: []
@@ -148,13 +155,13 @@ TextureImporter:
         width: 30
         height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f7d3bf0069ad4f40abe77e0c75c97b3
+      spriteID: 8ceca49fa5a3a514da65b727d40580b0
       vertices: []
       indices: 
       edges: []
@@ -168,13 +175,13 @@ TextureImporter:
         width: 30
         height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6fd39ade7b030347a1858c841b9b5ba
+      spriteID: 36a2651a87465874db919a06cc238e1f
       vertices: []
       indices: 
       edges: []
@@ -188,13 +195,153 @@ TextureImporter:
         width: 30
         height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70e941ea45e621f4f99629c25f51ae74
+      spriteID: 6ee74a31ef237f148bfc30f82f4da8fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 277
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359502ca5e5010c4480ca5be1ec1430f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_6
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 276
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572d0e5c3071753478e910ce1b644c1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_7
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 276
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273f6806eab1ce948a36ffdfec5ada15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 276
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547935ea486d41c41ac5378f440231b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 211
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c424d0d51751d334e9bc53372924240b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 210
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a8cf91a76faed4ba60e589d2740e50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_11
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 210
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7a23980c0cbec44b2e61e69c30d3b7
       vertices: []
       indices: 
       edges: []
