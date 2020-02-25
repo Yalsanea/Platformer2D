@@ -404,6 +404,9 @@
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
  <HintPath>D:/Github/Repos/Platformer2D/Source/Mygame1/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
+ <Reference Include="NSubstitute">
+ <HintPath>D:/Github/Repos/Platformer2D/Source/Mygame1/Library/PackageCache/com.unity.2d.common@1.0.11-preview.1/Tests/Editor/Lib/NSubstitute/NSubstitute.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>D:/Github/Repos/Platformer2D/Source/Mygame1/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

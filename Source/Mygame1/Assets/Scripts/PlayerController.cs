@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
 		
 		//jumping
 		isJump = Input.GetKeyDown("space");
+		
+		
 			 if (IsGrounded() && isJump) {
 		 rb.AddForce(new Vector2(moveVelocity*0.25f,1) * new Vector2(1,jumpSpeed),ForceMode2D.Impulse);
 		 Debug.Log("Jump");
@@ -60,6 +62,7 @@ public class PlayerController : MonoBehaviour
 	  if(IsGrounded()== false && rb.velocity.y > 0 ){
 		  animator.SetBool("IsJumping",true); 
 		  animator.SetBool("IsFalling",false);
+		  Debug.Log("Jumping animation");
 	  }
 	  else if(IsGrounded() == false && rb.velocity.y <= 0) {
 		  animator.SetBool("IsFalling",true);

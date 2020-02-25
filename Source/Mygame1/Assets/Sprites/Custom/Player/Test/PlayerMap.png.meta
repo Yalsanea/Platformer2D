@@ -2,24 +2,67 @@ fileFormatVersion: 2
 guid: 6869adec3a25d024ead45c2dc62bb642
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlayerMap_0
-    21300002: PlayerMap_1
-    21300004: PlayerMap_2
-    21300006: PlayerMap_3
-    21300008: PlayerMap_4
-    21300010: PlayerMap_5
-    21300012: PlayerMap_6
-    21300014: PlayerMap_7
-    21300016: PlayerMap_8
-    21300018: PlayerMap_9
-    21300020: PlayerMap_10
-    21300022: PlayerMap_11
+    21300000: Idle0
+    21300002: Idle1
+    21300004: Idle2
+    21300006: Idle3
+    21300008: Idle4
+    21300010: PlayerSide
+    21300012: Run1
+    21300014: Run2
+    21300016: Run3
+    21300018: Run4
+    21300020: Run5
+    21300022: Run6
+    21300024: Run7
+    21300026: Run8
+    21300028: Run9
+    21300030: Run10
+    21300032: Run11
+    21300034: Run12
+    21300036: PlayerMap_0
+    21300038: PlayerMap_1
+    21300040: PlayerMap_2
+    21300042: PlayerMap_3
+    21300044: PlayerMap_4
+    21300046: PlayerMap_5
+    21300048: PlayerMap_6
+    21300050: PlayerMap_7
+    21300052: PlayerMap_8
+    21300054: PlayerMap_9
+    21300056: PlayerMap_10
+    21300058: PlayerMap_11
+    21300060: PlayerMap_12
+    21300062: PlayerMap_13
+    21300064: PlayerMap_14
+    21300066: PlayerMap_15
+    21300068: PlayerMap_16
+    21300070: PlayerMap_17
+    21300072: PlayerMap_18
+    21300074: PlayerMap_19
+    21300076: PlayerMap_20
+    21300078: PlayerMap_21
+    21300080: PlayerMap_22
+    21300082: PlayerMap_23
+    21300084: PlayerMap_24
+    21300086: PlayerMap_25
+    21300088: PlayerMap_26
+    21300090: PlayerMap_27
+    21300092: PlayerMap_28
+    21300094: PlayerMap_29
+    21300096: PlayerMap_30
+    21300098: PlayerMap_31
+    21300100: PlayerMap_32
+    21300102: PlayerMap_33
+    21300104: PlayerMap_34
+    21300106: PlayerMap_35
+    21300108: PlayerMap_36
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -57,7 +100,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +118,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -86,7 +129,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +140,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +153,7 @@ TextureImporter:
       name: PlayerMap_0
       rect:
         serializedVersion: 2
-        x: 16
+        x: 2
         y: 344
         width: 30
         height: 53
@@ -121,7 +164,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 029977f332b36cf41994f87db7df9658
+      spriteID: 7dcf389d833a59349bd03a5b17b397ce
       vertices: []
       indices: 
       edges: []
@@ -130,7 +173,7 @@ TextureImporter:
       name: PlayerMap_1
       rect:
         serializedVersion: 2
-        x: 66
+        x: 52
         y: 344
         width: 30
         height: 53
@@ -141,7 +184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c8270169e8092e4cb9869a2b33c3c2b
+      spriteID: f24efff422e6bef43adbdd38614672f1
       vertices: []
       indices: 
       edges: []
@@ -150,7 +193,7 @@ TextureImporter:
       name: PlayerMap_2
       rect:
         serializedVersion: 2
-        x: 110
+        x: 96
         y: 343
         width: 30
         height: 53
@@ -161,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ceca49fa5a3a514da65b727d40580b0
+      spriteID: dbc6c059f192bcb4eb5aeaac4e423586
       vertices: []
       indices: 
       edges: []
@@ -170,7 +213,7 @@ TextureImporter:
       name: PlayerMap_3
       rect:
         serializedVersion: 2
-        x: 152
+        x: 138
         y: 344
         width: 30
         height: 53
@@ -181,7 +224,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36a2651a87465874db919a06cc238e1f
+      spriteID: 94651f7944dbbba4ca502cf0a5eaff01
       vertices: []
       indices: 
       edges: []
@@ -190,7 +233,7 @@ TextureImporter:
       name: PlayerMap_4
       rect:
         serializedVersion: 2
-        x: 188
+        x: 174
         y: 344
         width: 30
         height: 53
@@ -201,7 +244,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ee74a31ef237f148bfc30f82f4da8fb
+      spriteID: cf1b9c11ff273594d80aa8ab93267b29
       vertices: []
       indices: 
       edges: []
@@ -210,10 +253,10 @@ TextureImporter:
       name: PlayerMap_5
       rect:
         serializedVersion: 2
-        x: 15
+        x: 6
         y: 277
-        width: 55
-        height: 61
+        width: 50
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,7 +264,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 359502ca5e5010c4480ca5be1ec1430f
+      spriteID: 3c27727d5054ea2449afc5f78198382f
       vertices: []
       indices: 
       edges: []
@@ -230,10 +273,10 @@ TextureImporter:
       name: PlayerMap_6
       rect:
         serializedVersion: 2
-        x: 82
-        y: 276
-        width: 55
-        height: 61
+        x: 4
+        y: 205
+        width: 50
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,7 +284,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 572d0e5c3071753478e910ce1b644c1c
+      spriteID: afa20318802296f4184c0c474054b124
       vertices: []
       indices: 
       edges: []
@@ -250,10 +293,10 @@ TextureImporter:
       name: PlayerMap_7
       rect:
         serializedVersion: 2
-        x: 146
-        y: 276
-        width: 55
-        height: 61
+        x: 60
+        y: 205
+        width: 50
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,7 +304,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 273f6806eab1ce948a36ffdfec5ada15
+      spriteID: b972b95dc9608ef4e8332be6703da2fe
       vertices: []
       indices: 
       edges: []
@@ -270,10 +313,10 @@ TextureImporter:
       name: PlayerMap_8
       rect:
         serializedVersion: 2
-        x: 207
-        y: 276
-        width: 55
-        height: 61
+        x: 117
+        y: 205
+        width: 50
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,7 +324,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 547935ea486d41c41ac5378f440231b5
+      spriteID: a55fdcc1e0630e04686f8b1464daf035
       vertices: []
       indices: 
       edges: []
@@ -290,10 +333,10 @@ TextureImporter:
       name: PlayerMap_9
       rect:
         serializedVersion: 2
-        x: 14
-        y: 211
-        width: 55
-        height: 61
+        x: 180
+        y: 205
+        width: 50
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,7 +344,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c424d0d51751d334e9bc53372924240b
+      spriteID: 96e4d674108e5fd438d7f3d4d0b5d047
       vertices: []
       indices: 
       edges: []
@@ -310,10 +353,10 @@ TextureImporter:
       name: PlayerMap_10
       rect:
         serializedVersion: 2
-        x: 81
-        y: 210
-        width: 55
-        height: 61
+        x: 242
+        y: 206
+        width: 50
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,7 +364,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46a8cf91a76faed4ba60e589d2740e50
+      spriteID: d314d1baa9db5994e8b64218f1fb6a6a
       vertices: []
       indices: 
       edges: []
@@ -330,10 +373,10 @@ TextureImporter:
       name: PlayerMap_11
       rect:
         serializedVersion: 2
-        x: 145
-        y: 210
-        width: 55
-        height: 61
+        x: 306
+        y: 207
+        width: 50
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,7 +384,507 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b7a23980c0cbec44b2e61e69c30d3b7
+      spriteID: f6efb20d32ee7804390eed7ae26b1e3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_12
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 207
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a263aa35999b3c4468c47f410a8490f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_13
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 209
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c20e555d5a3cbe499ebd1ea430bba9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_14
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 210
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010e51ed8cfd47140bab9516a4807cc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_15
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 213
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb71cd5b8e0fb04e9f9f15dee21cb09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 142
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c315043be3255f4292fdf8c55157f32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_17
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 141
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5651fe6d0a5c7b4ebac072788b4ca22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_18
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 142
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cd4601dc8742749940724fee763e71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_19
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 143
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a39a609b38c6448bc25c199ecfc4ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_20
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 143
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e426b24290317c34294e492a81a86ad1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_21
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 144
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca16de46d064af429838657396d7922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_22
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 144
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c8135c7cb43c148b57d64b4f041915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_23
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 144
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de7ba2e10703df408bbd28a9ef12d0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_24
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 145
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96939d68f43f7164797ec8a0e61b88c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 79
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcef7213b6dab184db54118d1a51f0b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_26
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 79
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fd952e63c4b324d93d04adfbf97da0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_27
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 77
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f70d9682b7c6a64f885c829fa741a95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_28
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 76
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd517614b9a78c4eafe1fa37b5bc706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_29
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 76
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d669f6c7dac1e57479dd1404dc406679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_30
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 76
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ec9f5711888a1418eb76191d5a8292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_31
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 77
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf81bc4999f06548a25ab00c525e4f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_32
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 77
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6488a2ac114bc8b46b5ae276db6c1337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_33
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 77
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb24a093b400c944ad415c6a7a6f3d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_34
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 77
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c64308567b66f7498b5cbf49667777e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_35
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 20
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebd998b6f578b64989ebb4198221f1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerMap_36
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 19
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894f2445c1d85ce4288a4f7c9df63cf1
       vertices: []
       indices: 
       edges: []
