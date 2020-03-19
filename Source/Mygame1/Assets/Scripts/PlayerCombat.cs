@@ -16,6 +16,8 @@ public class PlayerCombat : MonoBehaviour
 	public float knockbackForce;
 	private Rigidbody2D rb;
 	public int currentHealth;
+	public GameObject Dialogbox;
+	
 	
 	float nextAttackTime = 0f;
 	
@@ -42,20 +44,48 @@ public class PlayerCombat : MonoBehaviour
 	
 	void Attack()
 	{
-		// play attack animation
-		animator.SetTrigger("Attack");
+	
 		
 		//detect enemies in range of attack
 		Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-		
-		//damage
 		foreach(Collider2D enemy in hitEnemies){
+		if (enemy.tag == "NPC"){
+		gameObject.GetComponent<PlayerController>().enabled = false;
+	Debug.Log("Start Dialog");
+		Dialogbox = GameObject.FindWithTag(enemy.name + "Dialogue");
+		if(Dialogbox.GetComponent<Dialog>().cantalk == true){
+	   Dialogbox.GetComponent<Dialog>().NextSentence();
+		}
+		
+		if(Dialogbox.GetComponent<Dialog>().donetalking == true){
+		gameObject.GetComponent<PlayerController>().enabled = true;
+		}
+		
+		}
+		
+		
+		//damage if enemy
+		else{ 
+			// play attack animation
+		animator.SetTrigger("Attack");
+		
+		
 			Debug.Log("hit" + enemy.name);
 			enemy.GetComponent<EnemyMechanics>().TakeDamage(attackDamage,attackPoint.position);
 			
 		}
+	
 	}
-		
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
 		void OnDrawGizmosSelected ()
 		{      //draw wireframe of attack hit circle
 			if(attackPoint == null){
